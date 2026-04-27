@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="FPGA">
+      <UniqueIdentifier>{4d935bbf-0173-4a0a-8d18-7a8faad19cda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FPGA\libs">
+      <UniqueIdentifier>{fd258b5c-3122-4c49-9101-abf45e5a90a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FPGA\Memory">
+      <UniqueIdentifier>{3facb792-48c3-48f9-99e5-fa1d28d8d311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FPGA\nt">
+      <UniqueIdentifier>{c8825304-8840-4cc6-87eb-8c8c01256627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{586f8957-0067-46f1-b304-89e36561857f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nlohmann">
+      <UniqueIdentifier>{8373f58c-08cb-446c-9cc1-acfd77c97a3d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\FPGA\pch.cpp">
+      <Filter>FPGA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\FPGA\Memory\InputManager.cpp">
+      <Filter>FPGA\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\FPGA\Memory\Memory.cpp">
+      <Filter>FPGA\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\FPGA\Memory\Registry.cpp">
+      <Filter>FPGA\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\FPGA\Memory\Shellcode.cpp">
+      <Filter>FPGA\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Core\Process.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Core\Engine.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\FPGA\pch.h">
+      <Filter>FPGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FPGA\framework.h">
+      <Filter>FPGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FPGA\nt\structs.h">
+      <Filter>FPGA\nt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FPGA\Memory\InputManager.h">
+      <Filter>FPGA\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FPGA\Memory\Memory.h">
+      <Filter>FPGA\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FPGA\Memory\Registry.h">
+      <Filter>FPGA\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FPGA\Memory\Shellcode.h">
+      <Filter>FPGA\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FPGA\libs\leechcore.h">
+      <Filter>FPGA\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FPGA\libs\vmmdll.h">
+      <Filter>FPGA\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Core\Data.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Core\Offset.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Core\Process.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Core\GName.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Core\Wrappers.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Core\GObject.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Core\Engine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Core\Enums.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Core\DumpOffset.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Core\Aes.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="aes_crypto_tables.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\nlohmann\json.hpp">
+      <Filter>nlohmann</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Include\FPGA\libs\leechcore.lib">
+      <Filter>FPGA\libs</Filter>
+    </Library>
+    <Library Include="..\Include\FPGA\libs\vmm.lib">
+      <Filter>FPGA\libs</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dynamic_keys.json">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="decrypted_keys.json">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

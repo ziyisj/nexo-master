@@ -1,0 +1,63 @@
+﻿syntax = "proto3";
+
+package WebRadarMsg;
+
+message Equipment {
+    int32 level = 1;
+    float durability = 2;
+}
+
+message Color {
+    int32 r = 1;
+    int32 g = 2;
+    int32 b = 3;
+}
+
+message Player {
+    string name = 1;
+    float health = 2;
+    int32 player_type = 3;
+    string hero_id = 4;
+    string weapon_id = 5;
+    Equipment helmet = 6;
+    Equipment armor = 7;
+    int32 status = 8;
+    float direction = 9;
+    string team_id = 10;
+    bool is_teammate = 11;
+    bool is_self = 12;
+    float position_x = 13;
+    float position_y = 14;
+    float position_z = 15;
+    Color color = 16;
+    int64 id = 17;
+}
+
+message RadarMessage {
+    int32 msg_id = 1;
+    string map_name = 2;
+    repeated Player players = 3;
+    int32 game_status = 4;
+}
+
+message Item {
+    int32 item_type = 1;
+    string item_name = 2;
+    string item_value0 = 3;
+    string item_value1 = 4;
+    string item_value2 = 5;
+    float position_x = 6;
+    float position_y = 7;
+    float position_z = 8;
+}
+
+message RadarMessageSub {
+    int32 msg_id = 1;
+    repeated Item items = 2;
+    repeated Player players = 3;
+}
+
+message RadarMessageUpdate {
+    int32 msg_id = 1;
+    repeated Player players = 2;
+}

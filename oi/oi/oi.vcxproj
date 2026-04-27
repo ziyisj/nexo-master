@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{942b4b46-f4d1-43cc-b164-bebb6b6f4820}</ProjectGuid>
+    <RootNamespace>oi</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <VCToolsVersion>14.44.35207</VCToolsVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(DXSDK_DIR)Include;$(SolutionDir)Include;$(SolutionDir)Source;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(SolutionDir)Source;$(SolutionDir)Lib;$(SolutionDir)\Include\PhysX\Lib;$(SolutionDir)\Include\ThemidaSDK\Lib;$(SolutionDir)\Include\glad;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgTriplet>x64-windows-static</VcpkgTriplet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PX_SUPPORT_PVD;SFML_STATIC;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4996;4700;4146</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>user32.lib;shell32.lib;winmm.lib;Shlwapi.lib;advapi32.lib;opengl32.lib;wsock32.lib;Ws2_32.lib;SetupAPI.lib;Dwmapi.lib;d3d11.lib;d3dcompiler.lib;dxgi.lib;bcrypt.lib;crypt32.lib;libprotobuf.lib;PhysX3_x64.lib;PhysX3Common_x64.lib;PhysX3Extensions.lib;PhysX3Cooking_x64.lib;PxFoundation_x64.lib;PxPvdSDK_x64.lib;glad.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateMapFile>false</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Include\DMALibrary\DMALibrary.cpp" />
+    <ClCompile Include="..\Include\DMALibrary\Memory\InputManager.cpp" />
+    <ClCompile Include="..\Include\DMALibrary\Memory\Memory.cpp" />
+    <ClCompile Include="..\Include\DMALibrary\Memory\Registry.cpp" />
+    <ClCompile Include="..\Include\DMALibrary\Memory\Shellcode.cpp" />
+    <ClCompile Include="..\Include\imgui\imgui.cpp" />
+    <ClCompile Include="..\Include\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\Include\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\Include\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\Include\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\Include\imgui\imgui_stdlib.cpp" />
+    <ClCompile Include="..\Include\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\Include\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="..\Source\AntiCheat\AntiCheat.cpp" />
+    <ClCompile Include="..\Source\Common\Auth.cpp" />
+    <ClCompile Include="..\Source\Common\Base64.cpp" />
+    <ClCompile Include="..\Source\Common\Config.cpp" />
+    <ClCompile Include="..\Source\Common\Crypto.cpp" />
+    <ClCompile Include="..\Source\Common\Entity.cpp" />
+    <ClCompile Include="..\Source\Common\Offset.cpp" />
+    <ClCompile Include="..\Source\Common\Translate\ItemDataTable.cpp" />
+    <ClCompile Include="..\Source\Common\Translate\ItemTranslateCN.cpp" />
+    <ClCompile Include="..\Source\Common\Translate\ItemTranslateEN.cpp" />
+    <ClCompile Include="..\Source\Common\VectorHelper.cpp" />
+    <ClCompile Include="..\Source\Hack\Actor.cpp" />
+    <ClCompile Include="..\Source\Hack\AimBot.cpp" />
+    <ClCompile Include="..\Source\Hack\Container.cpp" />
+    <ClCompile Include="..\Source\Hack\DeadBody.cpp" />
+    <ClCompile Include="..\Source\Hack\Decrypt.cpp" />
+    <ClCompile Include="..\Source\Hack\DynamicDecrypt.cpp" />
+    <ClCompile Include="..\Source\Hack\ENC\ENC.cpp" />
+    <ClCompile Include="..\Source\Hack\FuckEnc.cpp" />
+    <ClCompile Include="..\Source\Hack\GName.cpp" />
+    <ClCompile Include="..\Source\Hack\Hack.cpp" />
+    <ClCompile Include="..\Source\Hack\Item.cpp" />
+    <ClCompile Include="..\Source\Hack\KeyState.cpp" />
+    <ClCompile Include="..\Source\Hack\MirrorProcess.cpp" />
+    <ClCompile Include="..\Source\Hack\PhysXCollect.cpp" />
+    <ClCompile Include="..\Source\Hack\PhysXMirror.cpp" />
+    <ClCompile Include="..\Source\Hack\Player.cpp" />
+    <ClCompile Include="..\Source\Hack\Process.cpp" />
+    <ClCompile Include="..\Source\Hack\Radar.cpp" />
+    <ClCompile Include="..\Source\Hack\Recoil.cpp" />
+    <ClCompile Include="..\Source\Hack\UPTRDecrypt.cpp" />
+    <ClCompile Include="..\Source\Overlay\DMARender.cpp" />
+    <ClCompile Include="..\Source\Overlay\Menu\NewGUI\NewMoveBox.cpp" />
+    <ClCompile Include="..\Source\Overlay\Menu\NewGUI\NewColorPicker.cpp" />
+    <ClCompile Include="..\Source\Overlay\Menu\NewGUI\NewCubicBezierEditor.cpp" />
+    <ClCompile Include="..\Source\Overlay\Menu\NewGUI\NewSelect.cpp" />
+    <ClCompile Include="..\Source\Overlay\Menu\NewGUI\NewSelectTab.cpp" />
+    <ClCompile Include="..\Source\Overlay\Menu\NewGUI\NewTab.cpp" />
+    <ClCompile Include="..\Source\Overlay\Menu\NewPlayerLists.cpp" />
+    <ClCompile Include="..\Source\Overlay\OpenESP\ArmorEffect.cpp" />
+    <ClCompile Include="..\Source\Overlay\Overlay.cpp" />
+    <ClCompile Include="..\Source\Overlay\Texture.cpp" />
+    <ClCompile Include="..\Source\Physics3D\Editor3D.cpp" />
+    <ClCompile Include="..\Source\Physics3D\Physics3D.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\BitmapFont.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\BitmapText.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\ConsoleScreen.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\Crosshair.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\GallerySprite.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\Line.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\NinePatch.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\PieChart.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\PixelDisplay.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\Polygon.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\ProgressBar.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\Ring.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\SpinningCard.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\Spline.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\Sprite3d.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\Starfield.cpp" />
+    <ClCompile Include="..\Source\SelbaWard\Starfield3d.cpp" />
+    <ClCompile Include="..\Source\Utils\Controller\CatBox\aes_functions.cpp" />
+    <ClCompile Include="..\Source\Utils\Controller\CATBOX\CatBox.cpp" />
+    <ClCompile Include="..\Source\Utils\Controller\CatBox\cat_net.cpp" />
+    <ClCompile Include="..\Source\Utils\Controller\DHZBox.cpp" />
+    <ClCompile Include="..\Source\Utils\Controller\Lurker.cpp" />
+    <ClCompile Include="..\Source\Utils\Controller\MoBox.cpp" />
+    <ClCompile Include="..\Source\Utils\Controller\NetConfig\kmboxNet.cpp" />
+    <ClCompile Include="..\Source\Utils\Controller\UDPSender.cpp" />
+    <ClCompile Include="..\Source\Utils\FLoop.cpp" />
+    <ClCompile Include="..\Source\Utils\I18N.cpp" />
+    <ClCompile Include="..\Source\Utils\ResourceManager.cpp" />
+    <ClCompile Include="..\Source\Utils\Throttler.cpp" />
+    <ClCompile Include="..\Source\Utils\Timer.cpp" />
+    <ClCompile Include="..\Source\Utils\ue4math\matrix.cpp" />
+    <ClCompile Include="..\Source\Utils\ue4math\quat.cpp" />
+    <ClCompile Include="..\Source\Utils\ue4math\rotator.cpp" />
+    <ClCompile Include="..\Source\Utils\ue4math\transform.cpp" />
+    <ClCompile Include="..\Source\Utils\ue4math\vector.cpp" />
+    <ClCompile Include="..\Source\WebRadar\WebRadar.cpp" />
+    <ClCompile Include="..\Source\WebRadar\WebRadar.pb.cc" />
+    <ClCompile Include="..\Source\WebRadar\WebSocketClient.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\DMALibrary\framework.h" />
+    <ClInclude Include="..\Include\DMALibrary\libs\leechcore.h" />
+    <ClInclude Include="..\Include\DMALibrary\libs\vmmdll.h" />
+    <ClInclude Include="..\Include\DMALibrary\Memory\InputManager.h" />
+    <ClInclude Include="..\Include\DMALibrary\Memory\Memory.h" />
+    <ClInclude Include="..\Include\DMALibrary\Memory\Registry.h" />
+    <ClInclude Include="..\Include\DMALibrary\Memory\Shellcode.h" />
+    <ClInclude Include="..\Include\DMALibrary\nt\structs.h" />
+    <ClInclude Include="..\Include\DMALibrary\pch.h" />
+    <ClInclude Include="..\Include\glad\glad.h" />
+    <ClInclude Include="..\Include\IDA\ida_defs.h" />
+    <ClInclude Include="..\Include\imgui\imconfig.h" />
+    <ClInclude Include="..\Include\imgui\imgui.h" />
+    <ClInclude Include="..\Include\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="..\Include\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="..\Include\imgui\imgui_internal.h" />
+    <ClInclude Include="..\Include\imgui\imgui_settings.h" />
+    <ClInclude Include="..\Include\imgui\imgui_stdlib.h" />
+    <ClInclude Include="..\Include\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\Include\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\Include\imgui\imstb_truetype.h" />
+    <ClInclude Include="..\Include\nlohmann\json.hpp" />
+    <ClInclude Include="..\Include\ThemidaSDK\SecureEngineCustomVMs.h" />
+    <ClInclude Include="..\Include\ThemidaSDK\SecureEngineCustomVMs_BorlandC_inline.h" />
+    <ClInclude Include="..\Include\ThemidaSDK\SecureEngineCustomVMs_GNU_inline.h" />
+    <ClInclude Include="..\Include\ThemidaSDK\SecureEngineCustomVMs_ICL_inline.h" />
+    <ClInclude Include="..\Include\ThemidaSDK\SecureEngineCustomVMs_LCC_inline.h" />
+    <ClInclude Include="..\Include\ThemidaSDK\SecureEngineCustomVMs_VC_inline.h" />
+    <ClInclude Include="..\Include\ThemidaSDK\ThemidaSDK.h" />
+    <ClInclude Include="..\Source\AntiCheat\AntiCheat.h" />
+    <ClInclude Include="..\Source\AntiCheat\ScreenCapture.h" />
+    <ClInclude Include="..\Source\Common\API.h" />
+    <ClInclude Include="..\Source\Common\Auth.h" />
+    <ClInclude Include="..\Source\Common\Base64.h" />
+    <ClInclude Include="..\Source\Common\Bone.h" />
+    <ClInclude Include="..\Source\Common\Crypto.h" />
+    <ClInclude Include="..\Source\Common\DoorData.h" />
+    <ClInclude Include="..\Source\Common\Entity.h" />
+    <ClInclude Include="..\Source\Common\Config.h" />
+    <ClInclude Include="..\Source\Common\Constant.h" />
+    <ClInclude Include="..\Source\Common\Data.h" />
+    <ClInclude Include="..\Source\Common\Encrypt.h" />
+    <ClInclude Include="..\Source\Common\ItemMap.h" />
+    <ClInclude Include="..\Source\Common\ItemTranslate.h" />
+    <ClInclude Include="..\Source\Common\Offset.h" />
+    <ClInclude Include="..\Source\Common\Offsets.h" />
+    <ClInclude Include="..\Source\Common\SDK.h" />
+    <ClInclude Include="..\Source\Common\Translate\ItemDataTable.h" />
+    <ClInclude Include="..\Source\Common\Translate\ItemTranslateCN.h" />
+    <ClInclude Include="..\Source\Common\Translate\ItemTranslateEN.h" />
+    <ClInclude Include="..\Source\Common\VectorHelper.h" />
+    <ClInclude Include="..\Source\Hack\Actor.h" />
+    <ClInclude Include="..\Source\Hack\AimBot.h" />
+    <ClInclude Include="..\Source\Hack\Container.h" />
+    <ClInclude Include="..\Source\Hack\DeadBody.h" />
+    <ClInclude Include="..\Source\Hack\Decrypt.h" />
+    <ClInclude Include="..\Source\Hack\DynamicDecrypt.h" />
+    <ClInclude Include="..\Source\Hack\ENC\Calls.h" />
+    <ClInclude Include="..\Source\Hack\ENC\ENC.h" />
+    <ClInclude Include="..\Source\Hack\ENC\sub_28097D0.h" />
+    <ClInclude Include="..\Source\Hack\ENC\sub_28177F0.h" />
+    <ClInclude Include="..\Source\Hack\ENC\sub_973130.h" />
+    <ClInclude Include="..\Source\Hack\ENC\sub_99D820.h" />
+    <ClInclude Include="..\Source\Hack\FuckEnc.h" />
+    <ClInclude Include="..\Source\Hack\GName.h" />
+    <ClInclude Include="..\Source\Hack\Hack.h" />
+    <ClInclude Include="..\Source\Hack\Item.h" />
+    <ClInclude Include="..\Source\Hack\KeyState.h" />
+    <ClInclude Include="..\Source\Hack\MirrorProcess.h" />
+    <ClInclude Include="..\Source\Hack\PhysXCollect.h" />
+    <ClInclude Include="..\Source\Hack\PhysXMirror.h" />
+    <ClInclude Include="..\Source\Hack\Player.h" />
+    <ClInclude Include="..\Source\Hack\Process.h" />
+    <ClInclude Include="..\Source\Hack\Radar.h" />
+    <ClInclude Include="..\Source\Hack\Recoil.h" />
+    <ClInclude Include="..\Source\Hack\UPTRDecrypt.h" />
+    <ClInclude Include="..\Source\Overlay\DMARender.h" />
+    <ClInclude Include="..\Source\Overlay\HealthBar.h" />
+    <ClInclude Include="..\Source\Overlay\Map.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewAimBot.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewAuth.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewBox.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewContainer.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewESP.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\NewCubicBezierEditor.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\NewSelect.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\Menu.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\NewColorPicker.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\NewMoveBox.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\NewSelectTab.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\Style.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\NewTab.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewHome.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewItem.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewPlayerLists.h" />
+    <ClInclude Include="..\Source\Overlay\Menu\NewRadar.h" />
+    <ClInclude Include="..\Source\Overlay\OpenESP\ArmorEffect.h" />
+    <ClInclude Include="..\Source\Overlay\OpenESP\FPS.h" />
+    <ClInclude Include="..\Source\Overlay\OpenESP\NewHealthBar.h" />
+    <ClInclude Include="..\Source\Overlay\OpenESP\OpenESP.h" />
+    <ClInclude Include="..\Source\Overlay\OpenESP\RoundedRectangleShape.h" />
+    <ClInclude Include="..\Source\Overlay\Overlay.h" />
+    <ClInclude Include="..\Source\Overlay\RenderHelper.h" />
+    <ClInclude Include="..\Source\Overlay\Style.h" />
+    <ClInclude Include="..\Source\Overlay\Texture.h" />
+    <ClInclude Include="..\Source\Physics3D\Editor3D.h" />
+    <ClInclude Include="..\Source\Physics3D\Physics3D.h" />
+    <ClInclude Include="..\Source\SelbaWard\BitmapFont.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\BitmapText.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\Common.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\ConsoleScreen.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\Crosshair.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\Exception.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\GallerySprite.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\Line.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\NinePatch.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\PaletteEnums.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\PieChart.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\PixelDisplay.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\Polygon.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\ProgressBar.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\Ring.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\SpinningCard.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\Spline.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\Sprite3d.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\Starfield.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\Starfield3d.hpp" />
+    <ClInclude Include="..\Source\SelbaWard\TileMap.hpp" />
+    <ClInclude Include="..\Source\Utils\Controller\CatBox\aes_functions.h" />
+    <ClInclude Include="..\Source\Utils\Controller\CATBOX\CatBox.h" />
+    <ClInclude Include="..\Source\Utils\Controller\CatBox\cat_net.h" />
+    <ClInclude Include="..\Source\Utils\Controller\CatBox\input-event-codes.h" />
+    <ClInclude Include="..\Source\Utils\Controller\COM.h" />
+    <ClInclude Include="..\Source\Utils\Controller\DHZBox.h" />
+    <ClInclude Include="..\Source\Utils\Controller\KmBoxNet.h" />
+    <ClInclude Include="..\Source\Utils\Controller\Lurker.h" />
+    <ClInclude Include="..\Source\Utils\Controller\MoBox.h" />
+    <ClInclude Include="..\Source\Utils\Controller\NetConfig\HidTable.h" />
+    <ClInclude Include="..\Source\Utils\Controller\NetConfig\kmboxNet.h" />
+    <ClInclude Include="..\Source\Utils\Controller\NewKmBox.h" />
+    <ClInclude Include="..\Source\Utils\Controller\UDPSender.h" />
+    <ClInclude Include="..\Source\Utils\Download.h" />
+    <ClInclude Include="..\Source\Utils\Engine.h" />
+    <ClInclude Include="..\Source\Utils\ExtractZipFile.h" />
+    <ClInclude Include="..\Source\Utils\FLoop.h" />
+    <ClInclude Include="..\Source\Utils\HighResolutionTimer.h" />
+    <ClInclude Include="..\Source\Utils\I18N.h" />
+    <ClInclude Include="..\Source\Utils\MachineCodeGenerator.h" />
+    <ClInclude Include="..\Source\Utils\PhysX.h" />
+    <ClInclude Include="..\Source\Utils\ProcessManager.h" />
+    <ClInclude Include="..\Source\Utils\ResourceManager.h" />
+    <ClInclude Include="..\Source\Utils\SafeMap.h" />
+    <ClInclude Include="..\Source\Utils\Sha.h" />
+    <ClInclude Include="..\Source\Utils\ThreadManager.h" />
+    <ClInclude Include="..\Source\Utils\Throttler.h" />
+    <ClInclude Include="..\Source\Utils\Timer.h" />
+    <ClInclude Include="..\Source\Utils\ue4math\matrix.h" />
+    <ClInclude Include="..\Source\Utils\ue4math\quat.h" />
+    <ClInclude Include="..\Source\Utils\ue4math\rotator.h" />
+    <ClInclude Include="..\Source\Utils\ue4math\transform.h" />
+    <ClInclude Include="..\Source\Utils\ue4math\ue4math.h" />
+    <ClInclude Include="..\Source\Utils\ue4math\vector.h" />
+    <ClInclude Include="..\Source\Utils\Utils.h" />
+    <ClInclude Include="..\Source\Utils\XorString.h" />
+    <ClInclude Include="..\Source\WebRadar\WebRadar.h" />
+    <ClInclude Include="..\Source\WebRadar\WebRadar.pb.h" />
+    <ClInclude Include="..\Source\WebRadar\WebSocketClient.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Include\DMALibrary\libs\leechcore.lib" />
+    <Library Include="..\Include\DMALibrary\libs\vmm.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Source\SelbaWard\TileMap.inl" />
+    <None Include="..\Source\WebRadar\WebRadar.proto" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

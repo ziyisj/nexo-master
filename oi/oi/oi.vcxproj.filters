@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DMALibrary">
+      <UniqueIdentifier>{a9e655b5-6110-4364-a761-c8d2c1c8036a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DMALibrary\libs">
+      <UniqueIdentifier>{b3a9a2ef-f7b0-40d7-accc-fac25616188f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="DMALibrary\Memory">
+      <UniqueIdentifier>{ab721604-d3e0-48b3-9a91-a796f03e94cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DMALibrary\nt">
+      <UniqueIdentifier>{a30f7054-e405-4fdd-8daf-6f37f9949af0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{20a15e6e-94b7-49ca-8d50-3ba4a6f6f27c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{287c335f-7d2d-417f-bc69-429f3ded24ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nlohmann">
+      <UniqueIdentifier>{8d7b442f-1e8f-4013-8081-7d5c485093ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Controller">
+      <UniqueIdentifier>{2b7f8ff3-f0bc-41a1-8a9f-b5e42238ee2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Controller\NetConfig">
+      <UniqueIdentifier>{d1349764-688f-48df-b3af-ef1e37db4f08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Overlay">
+      <UniqueIdentifier>{d1eaf0e0-6f00-4083-bdb6-4bc8aba222fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Overlay\OpenESP">
+      <UniqueIdentifier>{d916cd0e-1e0b-4802-80d2-5be75bfa4ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SelbaWard">
+      <UniqueIdentifier>{56b1fbf6-370f-47f9-a691-1dda0c33f837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\ue4math">
+      <UniqueIdentifier>{f38b1a0b-37dc-404e-99bc-8f4a758e7160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{b0cb54c7-f6c4-4c1b-b97c-bb43dcbfaa98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack">
+      <UniqueIdentifier>{a0e4a569-5bc6-4c18-9bbe-c08e6590085b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Overlay\Menu">
+      <UniqueIdentifier>{80771d2d-266c-461d-a7d4-403869014042}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Overlay\Menu\NewGUI">
+      <UniqueIdentifier>{0345fc01-46cc-42b4-bf74-6b67315aea2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Translate">
+      <UniqueIdentifier>{d7aa9153-c284-46f9-89a5-e3cbef0cfaca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AntiCheat">
+      <UniqueIdentifier>{0b4ec489-9279-47e1-8047-4a445d115e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebRadar">
+      <UniqueIdentifier>{87cf89f2-1ced-4bab-9aad-f29a785c10a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Controller\CatBox">
+      <UniqueIdentifier>{36300796-865d-4d61-a918-0c5a4160a442}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThemidaSDK">
+      <UniqueIdentifier>{883eff41-3587-47a8-a991-ec70474a7c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics3D">
+      <UniqueIdentifier>{42500a48-8369-491f-9ed1-d0111f668dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IDA">
+      <UniqueIdentifier>{18e4afc9-b388-4833-95b1-2569617abf42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\ENC">
+      <UniqueIdentifier>{7f59bef2-32bf-4e92-894b-0669c4e466e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glad">
+      <UniqueIdentifier>{7142e823-0223-461d-a8e3-8cc205d40bf9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\DMALibrary\DMALibrary.cpp">
+      <Filter>DMALibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\DMALibrary\Memory\InputManager.cpp">
+      <Filter>DMALibrary\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\DMALibrary\Memory\Memory.cpp">
+      <Filter>DMALibrary\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\DMALibrary\Memory\Registry.cpp">
+      <Filter>DMALibrary\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\DMALibrary\Memory\Shellcode.cpp">
+      <Filter>DMALibrary\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\Throttler.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\Timer.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\Controller\NetConfig\kmboxNet.cpp">
+      <Filter>Utils\Controller\NetConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\Controller\DHZBox.cpp">
+      <Filter>Utils\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\Controller\Lurker.cpp">
+      <Filter>Utils\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\Controller\MoBox.cpp">
+      <Filter>Utils\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\Controller\UDPSender.cpp">
+      <Filter>Utils\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Overlay\Overlay.cpp">
+      <Filter>Overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Overlay\Texture.cpp">
+      <Filter>Overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Overlay\DMARender.cpp">
+      <Filter>Overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\BitmapText.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\ConsoleScreen.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\Crosshair.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\GallerySprite.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\Line.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\NinePatch.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\PieChart.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\PixelDisplay.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\Polygon.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\ProgressBar.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\Ring.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\SpinningCard.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\Spline.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\Sprite3d.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\Starfield.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\Starfield3d.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SelbaWard\BitmapFont.cpp">
+      <Filter>SelbaWard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Common\VectorHelper.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\ue4math\rotator.cpp">
+      <Filter>Utils\ue4math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\ue4math\transform.cpp">
+      <Filter>Utils\ue4math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\ue4math\vector.cpp">
+      <Filter>Utils\ue4math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\ue4math\matrix.cpp">
+      <Filter>Utils\ue4math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\ue4math\quat.cpp">
+      <Filter>Utils\ue4math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\imgui\imgui_impl_dx11.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\imgui\imgui_stdlib.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\ResourceManager.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\FLoop.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Common\Entity.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Overlay\OpenESP\ArmorEffect.cpp">
+      <Filter>Overlay\OpenESP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Common\Crypto.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AntiCheat\AntiCheat.cpp">
+      <Filter>AntiCheat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Common\Base64.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\WebRadar\WebRadar.pb.cc">
+      <Filter>WebRadar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\Decrypt.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\Controller\CATBOX\CatBox.cpp">
+      <Filter>Utils\Controller\CatBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\Controller\CatBox\cat_net.cpp">
+      <Filter>Utils\Controller\CatBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\Controller\CatBox\aes_functions.cpp">
+      <Filter>Utils\Controller\CatBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Common\Offset.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Overlay\Menu\NewGUI\NewCubicBezierEditor.cpp">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Overlay\Menu\NewGUI\NewColorPicker.cpp">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Overlay\Menu\NewGUI\NewMoveBox.cpp">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Overlay\Menu\NewGUI\NewSelect.cpp">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Overlay\Menu\NewGUI\NewSelectTab.cpp">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Overlay\Menu\NewGUI\NewTab.cpp">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\Hack.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Common\Translate\ItemDataTable.cpp">
+      <Filter>Common\Translate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Common\Translate\ItemTranslateCN.cpp">
+      <Filter>Common\Translate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Common\Translate\ItemTranslateEN.cpp">
+      <Filter>Common\Translate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utils\I18N.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Common\Config.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Common\Auth.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\Actor.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\AimBot.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\Container.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\DeadBody.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\GName.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\Item.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\KeyState.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\Player.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\Process.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\Radar.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\PhysXMirror.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\DynamicDecrypt.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\WebRadar\WebRadar.cpp">
+      <Filter>WebRadar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\WebRadar\WebSocketClient.cpp">
+      <Filter>WebRadar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Overlay\Menu\NewPlayerLists.cpp">
+      <Filter>Overlay\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\Recoil.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\PhysXCollect.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\UPTRDecrypt.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Physics3D\Physics3D.cpp">
+      <Filter>Physics3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Physics3D\Editor3D.cpp">
+      <Filter>Physics3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\FuckEnc.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\MirrorProcess.cpp">
+      <Filter>Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Hack\ENC\ENC.cpp">
+      <Filter>Hack\ENC</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\DMALibrary\framework.h">
+      <Filter>DMALibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DMALibrary\pch.h">
+      <Filter>DMALibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DMALibrary\nt\structs.h">
+      <Filter>DMALibrary\nt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DMALibrary\Memory\InputManager.h">
+      <Filter>DMALibrary\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DMALibrary\Memory\Memory.h">
+      <Filter>DMALibrary\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DMALibrary\Memory\Registry.h">
+      <Filter>DMALibrary\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DMALibrary\Memory\Shellcode.h">
+      <Filter>DMALibrary\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DMALibrary\libs\leechcore.h">
+      <Filter>DMALibrary\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DMALibrary\libs\vmmdll.h">
+      <Filter>DMALibrary\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Throttler.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Timer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\MachineCodeGenerator.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\XorString.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Sha.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Data.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Offset.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\nlohmann\json.hpp">
+      <Filter>nlohmann</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Constant.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Encrypt.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Config.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\NetConfig\HidTable.h">
+      <Filter>Utils\Controller\NetConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\NetConfig\kmboxNet.h">
+      <Filter>Utils\Controller\NetConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\DHZBox.h">
+      <Filter>Utils\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\MoBox.h">
+      <Filter>Utils\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\KmBoxNet.h">
+      <Filter>Utils\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\Lurker.h">
+      <Filter>Utils\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\UDPSender.h">
+      <Filter>Utils\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\NewKmBox.h">
+      <Filter>Utils\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\COM.h">
+      <Filter>Utils\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Overlay.h">
+      <Filter>Overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Style.h">
+      <Filter>Overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Map.h">
+      <Filter>Overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Texture.h">
+      <Filter>Overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\DMARender.h">
+      <Filter>Overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\HealthBar.h">
+      <Filter>Overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\OpenESP\FPS.h">
+      <Filter>Overlay\OpenESP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\OpenESP\OpenESP.h">
+      <Filter>Overlay\OpenESP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\BitmapFont.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\BitmapText.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\Common.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\ConsoleScreen.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\Crosshair.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\Exception.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\GallerySprite.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\Line.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\NinePatch.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\PaletteEnums.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\PieChart.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\PixelDisplay.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\Polygon.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\ProgressBar.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\Ring.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\SpinningCard.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\Spline.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\Sprite3d.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\Starfield.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\Starfield3d.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SelbaWard\TileMap.hpp">
+      <Filter>SelbaWard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\OpenESP\NewHealthBar.h">
+      <Filter>Overlay\OpenESP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\OpenESP\RoundedRectangleShape.h">
+      <Filter>Overlay\OpenESP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\VectorHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\ue4math\quat.h">
+      <Filter>Utils\ue4math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\ue4math\rotator.h">
+      <Filter>Utils\ue4math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\ue4math\transform.h">
+      <Filter>Utils\ue4math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\ue4math\ue4math.h">
+      <Filter>Utils\ue4math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\ue4math\vector.h">
+      <Filter>Utils\ue4math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\ue4math\matrix.h">
+      <Filter>Utils\ue4math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Engine.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Download.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\HighResolutionTimer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\RenderHelper.h">
+      <Filter>Overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\imgui\imgui_impl_dx11.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\imgui\imgui_settings.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\imgui\imgui_stdlib.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\ResourceManager.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\Hack.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\Process.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\GName.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\SDK.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\Actor.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\SafeMap.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\FLoop.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Entity.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\Player.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\PhysX.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\PhysXMirror.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Bone.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\Menu.h">
+      <Filter>Overlay\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\Style.h">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\NewTab.h">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\I18N.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\NewSelectTab.h">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\NewColorPicker.h">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\KeyState.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\ItemMap.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\OpenESP\ArmorEffect.h">
+      <Filter>Overlay\OpenESP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\Container.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\NewMoveBox.h">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\API.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Crypto.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\ItemTranslate.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\Item.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Translate\ItemDataTable.h">
+      <Filter>Common\Translate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Translate\ItemTranslateCN.h">
+      <Filter>Common\Translate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Translate\ItemTranslateEN.h">
+      <Filter>Common\Translate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\DeadBody.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\NewSelect.h">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\AimBot.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\ThreadManager.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewGUI\NewCubicBezierEditor.h">
+      <Filter>Overlay\Menu\NewGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Auth.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AntiCheat\AntiCheat.h">
+      <Filter>AntiCheat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\Radar.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AntiCheat\ScreenCapture.h">
+      <Filter>AntiCheat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Base64.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\WebRadar\WebRadar.h">
+      <Filter>WebRadar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\WebRadar\WebRadar.pb.h">
+      <Filter>WebRadar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewAuth.h">
+      <Filter>Overlay\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewHome.h">
+      <Filter>Overlay\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewBox.h">
+      <Filter>Overlay\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewESP.h">
+      <Filter>Overlay\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewAimBot.h">
+      <Filter>Overlay\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewItem.h">
+      <Filter>Overlay\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewContainer.h">
+      <Filter>Overlay\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\Decrypt.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\CATBOX\CatBox.h">
+      <Filter>Utils\Controller\CatBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\CatBox\cat_net.h">
+      <Filter>Utils\Controller\CatBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\CatBox\aes_functions.h">
+      <Filter>Utils\Controller\CatBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Controller\CatBox\input-event-codes.h">
+      <Filter>Utils\Controller\CatBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\Offsets.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Common\DoorData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\ExtractZipFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ThemidaSDK\ThemidaSDK.h">
+      <Filter>ThemidaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ThemidaSDK\SecureEngineCustomVMs.h">
+      <Filter>ThemidaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ThemidaSDK\SecureEngineCustomVMs_BorlandC_inline.h">
+      <Filter>ThemidaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ThemidaSDK\SecureEngineCustomVMs_GNU_inline.h">
+      <Filter>ThemidaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ThemidaSDK\SecureEngineCustomVMs_ICL_inline.h">
+      <Filter>ThemidaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ThemidaSDK\SecureEngineCustomVMs_LCC_inline.h">
+      <Filter>ThemidaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ThemidaSDK\SecureEngineCustomVMs_VC_inline.h">
+      <Filter>ThemidaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\DynamicDecrypt.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\WebRadar\WebSocketClient.h">
+      <Filter>WebRadar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewPlayerLists.h">
+      <Filter>Overlay\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Overlay\Menu\NewRadar.h">
+      <Filter>Overlay\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\ProcessManager.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\Recoil.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\PhysXCollect.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\UPTRDecrypt.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Physics3D\Physics3D.h">
+      <Filter>Physics3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Physics3D\Editor3D.h">
+      <Filter>Physics3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\FuckEnc.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\IDA\ida_defs.h">
+      <Filter>IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\MirrorProcess.h">
+      <Filter>Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\ENC\ENC.h">
+      <Filter>Hack\ENC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\ENC\sub_28097D0.h">
+      <Filter>Hack\ENC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\ENC\Calls.h">
+      <Filter>Hack\ENC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\ENC\sub_99D820.h">
+      <Filter>Hack\ENC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\ENC\sub_28177F0.h">
+      <Filter>Hack\ENC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Hack\ENC\sub_973130.h">
+      <Filter>Hack\ENC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\glad\glad.h">
+      <Filter>glad</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Include\DMALibrary\libs\leechcore.lib">
+      <Filter>DMALibrary\libs</Filter>
+    </Library>
+    <Library Include="..\Include\DMALibrary\libs\vmm.lib">
+      <Filter>DMALibrary\libs</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Source\SelbaWard\TileMap.inl">
+      <Filter>SelbaWard</Filter>
+    </None>
+    <None Include="..\Source\WebRadar\WebRadar.proto">
+      <Filter>WebRadar</Filter>
+    </None>
+  </ItemGroup>
+</Project>
